@@ -1,0 +1,34 @@
+<style>
+@page {
+  size: Letter;
+  margin: 0.58in 0.65in 0.55in;
+  @bottom-left { font-family: "Adwaita Sans", sans-serif; font-size: 7pt; color: #64748b; letter-spacing: 0.5pt; text-transform: uppercase; }
+  @bottom-right { content: counter(page) " / " counter(pages); font-family: "Adwaita Sans", sans-serif; font-size: 8pt; color: #64748b; }
+}
+* { box-sizing: border-box; }
+html { color: #243041; background: white; }
+body { margin: 0; font-family: "Adwaita Sans", "DejaVu Sans", sans-serif; font-size: 9.5pt; line-height: 1.27; }
+h1 { margin: 0 0 5pt; color: #13283b; font-size: 23pt; line-height: 1.12; font-weight: 700; letter-spacing: -0.5pt; }
+h2 { margin: 13pt 0 7pt; padding-bottom: 4pt; border-bottom: 0.8pt solid #b7cbd5; font-size: 10.2pt; line-height: 1.15; letter-spacing: 0.8pt; text-transform: uppercase; color: #235368; break-after: avoid; }
+p { margin: 0 0 5pt; orphans: 3; widows: 3; }
+a { color: inherit; text-decoration: none; }
+strong { color: #172c3e; font-weight: 650; }
+em { font-size: 9pt; color: #566578; font-style: normal; }
+ul { margin: 0 0 6pt; padding-left: 12pt; }
+li { padding-left: 1pt; margin: 0 0 2pt; break-inside: avoid; }
+li::marker { color: #47788c; font-size: 8pt; }
+p:has(> strong:first-child) { break-after: avoid; }
+p:has(> strong:first-child) > br { display: none; }
+p:has(> strong:first-child) > em { float: right; margin-left: 8pt; }
+h1 + p { color: #235368; font-size: 9.7pt; margin-bottom: 7pt; }
+h1 + p strong { color: inherit; font-weight: 550; }
+h1 + p + p { font-size: 9pt; margin-bottom: 5pt; }
+h1 + p + p a { color: #235368; }
+h1 + p + p + p { font-size: 8.7pt; color: #566578; line-height: 1.4; }
+#open-source-development-independent-research { break-before: page; margin-top: 0; }
+#technical-skills ~ ul li { margin-bottom: 4pt; }
+@media screen {
+  html { background: #e8edf1; }
+  body { max-width: 8.5in; padding: 0.58in 0.65in; margin: 24px auto; background: white; box-shadow: 0 3px 24px #22334420; }
+}
+</style>
