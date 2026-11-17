@@ -2,14 +2,14 @@
 
 **Senior Haskell & Nix Engineer · Reproducible Infrastructure · Programming Languages**
 
-[hhefesto@rdataa.com](mailto:hhefesto@rdataa.com) · [hhefesto.com](https://hhefesto.com) · [GitHub](https://github.com/hhefesto) · [LinkedIn](https://www.linkedin.com/in/hhefesto/)
+[hhefesto@rdataa.com](mailto:hhefesto@rdataa.com) · [hhefesto.dev](https://hhefesto.dev) · [GitHub](https://github.com/hhefesto) · [LinkedIn](https://www.linkedin.com/in/hhefesto/)
 
 Denver, Colorado · Open to fully remote U.S. and international roles  
 U.S. and Mexican citizen · No U.S. visa sponsorship required · Native English and Spanish
 
 ## Summary
 
-Software engineer and independent consultant with over a decade of experience across fintech, scientific computing, and developer tooling. Specialize in production Haskell systems and reproducible infrastructure with Nix/NixOS, from backend development to CI/CD and deployment. Experience includes infrastructure modernization at FPComplete for Simspace, fintech services at Tontine Trust, and technical leadership of a scientific software platform. Combine hands-on engineering with programming-language development, independent research, and mentoring.
+Software engineer and independent consultant with over a decade of experience across backend engineering, DevOps, scientific computing, and developer tooling. Specialize in production Haskell systems and reproducible infrastructure with Nix/NixOS, from backend development to CI/CD and deployment. Experience includes infrastructure modernization at FPComplete for Simspace, DevOps and backend engineering at Tontine Trust, and technical leadership of a scientific software platform. Combine hands-on engineering with programming-language development, independent research, and mentoring; lately, verified software in Bend.
 
 ## Professional Experience
 
@@ -18,7 +18,7 @@ Software engineer and independent consultant with over a decade of experience ac
 
 - Migrated XPSOasis from PHP to Haskell/Yesod; developing its Servant/Reflex successor with shared API types and desktop compatibility.
 - Ported AAnalyzer to Linux and the web; developing Spectra2, a Haskell fitting engine with Agda specifications and numerical parity tests.
-- Maintain NixOS infrastructure, automated deployments, PostgreSQL, and backups; trained more than five developers in Haskell.
+- Maintain NixOS infrastructure, automated deployments, PostgreSQL, and backups; trained and mentored developers in Haskell.
 - Collaborate with Los Alamos National Laboratory on AI-assisted X-ray photoelectron spectroscopy (XPS) fitting.
 
 **Senior DevOps & Haskell Developer — Tontine Trust**  
@@ -61,19 +61,30 @@ Software engineer and independent consultant with over a decade of experience ac
 
 - Develop Telomare's Haskell compiler, evaluators, and language server, using distinct syntax types to enforce compiler-stage boundaries.
 - Accelerated the tic-tac-toe compilation benchmark from approximately 122 to 14 seconds (8.7×); prototyped static memory bounds for refinement-valid inputs, checked against measured heap usage.
-- Maintain Nix builds, GitHub Actions CI, and Cachix caching; mentored two Haskell contributors.
+- Extended its elementary affine logic (EAL) certification for interaction-combinator evaluation (shared definitions certified, memory bounded); porting the compiler to Bend (in progress).
+- Maintain Nix builds (ekapkgs), GitHub Actions CI, and Cachix caching; mentored two Haskell contributors.
 
 **ana — Language Modeling, Formal Methods & GPU Training**  
-*2025–Present* · [Code](https://github.com/hhefesto/ana)
+*2025–Present* · [Site](https://ana.hhefesto.dev) · [Code](https://github.com/hhefesto/ana)
 
-- Developed an autoregressive language-modeling stack from Agda mathematical specifications through a Haskell reference implementation to Futhark GPU kernels; trained a 115-million-parameter hybrid gated linear/softmax attention model on Wikipedia and FineWeb-Edu using a single NVIDIA RTX 3090.
-- Proved structural language, reverse-mode automatic differentiation, and decoding properties in Agda; built conformance checks comparing numerical outputs and gradients across reference and GPU implementations.
-- Built a CUDA/cuBLAS training backend, incremental decoding, and resumable training pipelines with dataset and tokenizer identity checks; deployed prebuilt Nix closures to rented GPUs to eliminate compilation on paid GPU time.
+- Built a 115-million-parameter hybrid gated linear/softmax attention language model with a proven meaning: its specification is theorems Bend checks; the model, GPU trainer, decoder and data tools are Bend programs.
+- Began with Agda specifications, a Haskell reference and Futhark kernels (trained on Wikipedia and FineWeb-Edu on one RTX 3090), then ported it all to Bend; outputs and gradients are checked across implementations.
+- Built a CUDA/cuBLAS training backend, incremental decoding, and resumable training pipelines with dataset and tokenizer identity checks; deployed prebuilt Nix closures to rented GPUs to avoid compiling on paid time.
 - Investigated attention-gate behavior to guide architecture changes and corrected unstable recurrent-attention gradients, validating the fixes across Haskell, Futhark, and cuBLAS implementations.
+
+**El cubo de Edgar — Optimal Rubik's Cube Solver**  
+*2026* · [Site](https://elcubodeedgar.hhefesto.dev) · [Code](https://github.com/hhefesto/elcubodeedgar)
+
+- An optimal solver in Bend (Korf's IDA*), its group theory as proven laws; it runs in the browser, one worker per core.
+
+**Bend tools**  
+*2026* · [mugen](https://github.com/hhefesto/mugen) · [bend-frp](https://github.com/hhefesto/bend-frp) · [agda2bend](https://github.com/hhefesto/agda2bend)
+
+- mugen: a never-ending AI chat in the terminal, its memory a binary tree of summaries. bend-frp: FRP after Conal Elliott, proved to agree with its meaning (hhefesto.dev runs on it). agda2bend: Agda modules to checked Bend 2.
 
 ## Technical Skills
 
-- **Languages:** Haskell, Nix, PureScript, Agda, C/C++; additional experience with Clojure, Java, SQL, and PHP.
+- **Languages:** Haskell, Bend, Nix, PureScript, Agda, C/C++; additional experience with Clojure, Java, SQL, and PHP.
 - **Functional web development:** Servant, Yesod, Reflex FRP, persistent/esqueleto, Amazonka.
 - **Infrastructure & delivery:** NixOS, flakes, flake-parts, haskell.nix, deploy-rs, Cachix, GitHub Actions, nginx, agenix, home-manager.
 - **Cloud platforms:** Hetzner, OVH, GCE, AWS; S3-compatible object storage.

@@ -76,7 +76,6 @@
             tr -s '[:space:]' ' ' < extracted.txt > content.txt
             grep -Fq 'Daniel Alberto Herrera-Rendon' content.txt
             grep -Fq 'CTO — RDATA' content.txt
-            grep -Fq 'more than five developers' content.txt
             touch "$out"
           '';
         });
